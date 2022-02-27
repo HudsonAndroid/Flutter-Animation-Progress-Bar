@@ -130,7 +130,7 @@ class AnimatedProgressBar extends AnimatedWidget {
       decoration: BoxDecoration(
         color: progressColor,
         borderRadius: widget._borderRadius,
-        border: widget.border,
+//        border: widget.border,
       ),
     );
     progressWidgets.add(progressWidget);
