@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 
 void main() => runApp(MyApp());
@@ -66,7 +65,7 @@ class _TestAppState extends State<TestApp> {
                     )
                   ]))),
           Container(
-              height: 450,
+              height: 300,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
                 child: Row(
@@ -93,10 +92,7 @@ class _TestAppState extends State<TestApp> {
                     FAProgressBar(
                         maxValue: 140,
                         size: 40,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(40),
-                          bottomRight: Radius.circular(40),
-                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(40)),
                         progressColor: const Color(0xff5F4B8B),
                         currentValue: _currentValue,
                         direction: Axis.vertical,
